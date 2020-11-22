@@ -37,7 +37,7 @@
         <form action="{{ url_for('predict') }}" method="POST">
             <div class="form-group">
                 <h2>Enter your text here !</h2>
-                <textarea class= "comment" rows="5" cols="30" name="text"></textarea><br>
+                <textarea class= "comment" rows="5" cols="30" name="text" required></textarea><br>
                 <button type="submit" class="btn btn-primary btn-lg " value="predict">Submit</button>
             </div>
 
