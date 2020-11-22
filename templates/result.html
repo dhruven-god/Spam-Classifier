@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href ="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> ☰ </button>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="http://127.0.0.1:5000/" class="nav-link">Home</a>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav ml-auto">
+                    <li>
+                        <a href="https://www.linkedin.com/in/dhruven-god/" class="nav-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/dhruven-god" class="nav-link"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </nav>
+    <div class = 'answers'>
+		
+        {% if prediction == 1  %}
+            <h1>Result: <span class='danger'><u>SPAM !</u></span></h1>
+        {% else %}
+            <h1>Result: <span class='safe'><u>Not a Spam !</u></span></h1>
+        {% endif %}
+    </div>	
+    <h2>Made by Dhruven </h2>
+    <div class = "social">
+        
+        <a href="https://github.com/dhruven-god" class="nav-link"><i class="fa fa-github" style="font-size:36px" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/dhruven-god/" class="nav-link"><i class="fa fa-linkedin" style="font-size:36px" aria-hidden="true"></i></a>
+
+    </div>
+    
+    <div class="footer-dark">
+        <footer>
+                <p class="copyright">© Dhruven Lincoln 2020</p>
+        </footer>
+    </div>
+</body>
+    <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous">
+    </script>
+</html>
